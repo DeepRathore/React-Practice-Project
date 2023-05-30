@@ -1,0 +1,24 @@
+React is a javascript library that is designed to handle the view layer in the app.
+It has set of tools and abstractions for building resuable components and managing the state of those components.
+React is often used in conjunction with other libraries or frameworks to create complete web applications
+
+
+Angular vs React
+1.React and Angular differ in their architecture, language, learning curve, rendering approach, and ecosystem.
+2.React and Angular are both popular front-end technologies used to build web applications, but they differ in several ways:
+3.Architecture: React is a library while Angular is a full-fledged framework. This means that React provides a focused set of tools and abstractions for building UI components and managing their state, while Angular provides a more comprehensive set of tools and conventions for building entire applications, including features such as routing, forms, and dependency injection.
+4.Language: React is primarily written in JavaScript, while Angular is written in TypeScript. TypeScript is a superset of JavaScript that adds optional static typing and other features to the language. While React can be used with TypeScript, it is not required.
+5.Learning curve: React has a relatively low learning curve compared to Angular, which can be more complex and require more upfront knowledge. React's API is focused on building UI components, while Angular has a larger API surface area and requires knowledge of concepts such as services, dependency injection, and observables.
+6.Rendering: React uses a virtual DOM to efficiently update the UI, while Angular uses a real DOM. This means that React can be faster at updating the UI for complex applications with many components.
+7.Community and ecosystem: React has a large and active community, with many open-source libraries and tools available for building applications. Angular also has a large community, but its ecosystem is more tightly integrated and focused on Angular-specific tools and conventions.
+8.In summary, React and Angular differ in their architecture, language, learning curve, rendering approach, and ecosystem. Both are powerful tools for building web applications, but developers should choose the tool that best fits their needs and the requirements of the project.
+
+
+How JSX is transformed to React.createElement - 
+JSX is converted by babel so that browser can undersrtand the html and js mixed code. Balel is a js compiler.
+
+
+jsx
+createRoot
+createElement
+Passing components to another component
