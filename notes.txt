@@ -22,3 +22,6 @@ jsx
 createRoot
 createElement
 Passing components to another component
+
+
+added client side routing
