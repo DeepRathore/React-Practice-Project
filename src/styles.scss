@@ -93,3 +93,34 @@ $text-color: #ffff;
     }
   }
 }
+
+
+.practice-content {
+  display: inline-flex;
+
+  .name {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .content {
+    display: none;
+    background: lightgrey;
+    height: 100px;
+    padding: 30px;
+    margin-right: 10px;
+    color: black;
+  }
+
+  .active-link {
+    .content {
+      display: block;
+    }
+
+    .name {
+      background-color: aqua;
+      color: black;
+      padding: 10px;
+    }
+  }
+}

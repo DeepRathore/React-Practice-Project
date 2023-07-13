@@ -32,6 +32,7 @@ const Header = (props) => {
   }, [])
 
   // this function will update the value of activeLink
+  // a function expression
   const updateActiveLink = (value) => {
     setActiveLink(value);
   }
@@ -47,8 +48,8 @@ const Header = (props) => {
           <Navbar.Collapse id="basic-navbar-nav mx-2">
             <Nav className="me-auto">
               <Link to="/" className={activeLink === 'home' ? 'active-nav-link' : 'nav-link'} onClick={() => updateActiveLink('home')}>Home</Link>
-              <Link to="skills" className={activeLink === 'skills' ? 'active-nav-link' : 'nav-link'} onClick={() => updateActiveLink('skills')}>Skills</Link>
-              <Link to="about" className={activeLink === 'about' ? 'active-nav-link' : 'nav-link'} onClick={() => updateActiveLink('about')}>About</Link>
+              <Link to="/skills" className={activeLink === 'skills' ? 'active-nav-link' : 'nav-link'} onClick={() => updateActiveLink('skills')}>Skills</Link>
+              <Link to="/about" className={activeLink === 'about' ? 'active-nav-link' : 'nav-link'} onClick={() => updateActiveLink('about')}>About</Link>
               <Dropdown as={NavItem} className={activeLink === 'projects' ? 'active-nav-link' : 'nav-link'} onClick={() => updateActiveLink('projects')}>
                 <Dropdown.Toggle>Practice</Dropdown.Toggle>
                 <Dropdown.Menu>

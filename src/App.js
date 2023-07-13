@@ -9,6 +9,8 @@ import { useState, useEffect } from 'react';
 import Alert from './components/Alert';
 import Skills from './components/Skills';
 import Profile from './components/Profile';
+import Practice1Tab from './components/Practice1Tab';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -53,6 +55,10 @@ function App() {
     }
   }
 
+  function Users() {
+    return <h2>Users</h2>;
+  }
+
   const user = {
     name: "Test",
     lastName: "Verma"
@@ -69,11 +75,18 @@ function App() {
         <Header uData={user} person={{ name: 'Lin Lanying added', imageId: '1bX5QH6' }} mode={mode} toggleMode={toggleMode} />
         <Alert showAlert={showAlert} onClose={handleCloseAlert} msg={alert.msg} class={alert.class} type={alert.type} />
 
+        <nav>
+          <ul>
+            <li>
+              <Link to="/skills">Skills </Link>
+            </li>
+          </ul>
+        </nav>
+        <Practice1Tab></Practice1Tab>
+
         {/* use client side routing */}
         <Switch>
-          <Route exact path="/skills">
-            <Skills />
-          </Route>
+          <Route exact path="/skills" component={<Skills/>} />
           <Route exact path="/profile">
             <Profile />
           </Route>
